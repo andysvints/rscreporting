@@ -1,6 +1,6 @@
 @{
 	RootModule 		= 'RSCReporting.psm1' 
-	ModuleVersion 		= '1.2.3' 
+	ModuleVersion 		= '1.2.4' 
 	CompatiblePSEditions 	= 'Desktop', 'Core' 
 	GUID 			= 'dc18a919-f4bf-4da2-8c76-24b68fa33ef0' 
 	Author 			= 'Joshua Stenhouse' 
@@ -190,6 +190,8 @@ FunctionsToExport = @(
 "Unregister-RSCHost",
 "Wait-RSCObjectJob",
 "Write-RSCAWSTagAssignments",
+"Write-RSCClusterNodes",
+"Write-RSCClusters",
 "Write-RSCClusterSLADomains",
 "Write-RSCEvents",
 "Write-RSCEventsAllObjects",
