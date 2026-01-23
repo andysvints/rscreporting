@@ -8,8 +8,12 @@ Import the module into your current session:
 
 The current build is: 
 
-```1.2.3```
+```1.2.4```
 
+Changes in 1.2.4 updated 01/23/2026:
+
+    - Added Write-RSCClusters and Write-RSCClusterNodes as a feature request for a Rubrik customer, feel free to submit your own requests by email to joshua@rubrik.com. Thanks!
+    
 Changes in 1.2.3 updated 11/18/2025:
 
     - Changed MountPath for Oracle DBs on Get-RSCLiveMounts from "N/A" to the targetHostMount field on the API which also populates the field in Write-RSCLiveMounts
