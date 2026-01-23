@@ -159,7 +159,7 @@ ForEach ($RSCCluster in $RSCClusterList)
 $Cluster = $RSCCluster.name
 $ClusterID = $RSCCluster.id
 $ClusterVersion = $RSCCluster.version
-$ClusterStatus = $RSCCluster.passesConnectivityCheck
+$ClusterStatus = $RSCCluster.status
 $ClusterIsHealthy = $RSCCluster.isHealthy
 $ClusterType = $RSCCluster.type
 $ClusterProduct = $RSCCluster.productType
