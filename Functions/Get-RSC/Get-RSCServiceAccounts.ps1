@@ -1,8 +1,10 @@
 ################################################
 # Function - Get-RSCServiceAccounts - Getting Service Accounts within RSC
 ################################################
-Function Get-RSCServiceAccounts {
-
+Function Get-RSCServiceAccount {
+[CmdletBinding()]
+[Alias('Get-RSCServiceAccounts')]
+param()
 <#
 .SYNOPSIS
 A Rubrik Security Cloud (RSC) Reporting Module Function returns a list of all service accounts configured.

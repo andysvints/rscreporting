@@ -1,8 +1,10 @@
 ################################################
 # Function - Get-RSCMSSQLHosts - Getting all MSSQL hosts visible to the RSC instance
 ################################################
-Function Get-RSCMSSQLHosts {
-
+Function Get-RSCMSSQLHost {
+[CmdletBinding()]
+[Alias('Get-RSCMSSQLHosts')]
+param()
 <#
 .SYNOPSIS
 A Rubrik Security Cloud (RSC) Reporting Module Function returning a list of all MSSQL hosts.

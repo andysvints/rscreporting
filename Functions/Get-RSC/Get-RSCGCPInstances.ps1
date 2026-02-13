@@ -1,8 +1,10 @@
 ################################################
 # Function - Get-RSCGCPInstances - Getting All RSCGCPInstances connected to RSC
 ################################################
-Function Get-RSCGCPInstances {
-
+Function Get-RSCGCPInstance {
+[CmdletBinding()]
+[Alias('Get-RSCGCPInstances')]
+param()
 <#
 .SYNOPSIS
 A Rubrik Security Cloud (RSC) Reporting Module Function returning all Google Cloud Instances.

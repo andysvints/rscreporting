@@ -1,8 +1,10 @@
 ################################################
 # Function - Get-RSCM365DoNotProtectObjects - Getting o365 o365DoNotProtectedObjects connected to RSC
 ################################################
-Function Get-RSCM365DoNotProtectObjects {
-
+Function Get-RSCM365DoNotProtectObject {
+[CmdletBinding()]
+[Alias('Get-RSCM365DoNotProtectObjects')]
+param()
 <#
 .SYNOPSIS
 A Rubrik Security Cloud (RSC) Reporting Module Function returning a list of all M365 objects set to DoNotProtect.

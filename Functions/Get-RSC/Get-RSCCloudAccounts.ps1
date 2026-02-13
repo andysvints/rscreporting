@@ -1,8 +1,10 @@
 ################################################
 # Function - Get-RSCCloudAccounts - Getting All Cloud Accounts connected to RSC
 ################################################
-Function Get-RSCCloudAccounts {
-	
+Function Get-RSCCloudAccount {
+[CmdletBinding()]
+[Alias('Get-RSCCloudAccounts')]
+param()	
 <#
 .SYNOPSIS
 A Rubrik Security Cloud (RSC) Reporting Module Function for a list of all Cloud accounts.

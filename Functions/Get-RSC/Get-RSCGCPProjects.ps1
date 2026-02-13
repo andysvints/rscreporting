@@ -1,8 +1,10 @@
 ################################################
 # Function - Get-RSCGCPProjects - Getting GCP Projects connected to RSC
 ################################################
-Function Get-RSCGCPProjects {
-
+Function Get-RSCGCPProject {
+[CmdletBinding()]
+[Alias('Get-RSCGCPProjects')]
+param()
 <#
 .SYNOPSIS
 A Rubrik Security Cloud (RSC) Reporting Module Function returning all Google Cloud Projects.

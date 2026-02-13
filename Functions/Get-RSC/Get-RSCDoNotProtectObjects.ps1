@@ -1,8 +1,10 @@
 ################################################
 # Function - Get-RSCDoNotProtectObjects - Getting all Unprotected objects visible to the RSC instance
 ################################################
-Function Get-RSCDoNotProtectObjects {
-
+Function Get-RSCDoNotProtectObject {
+[CmdletBinding()]
+[Alias('Get-RSCDoNotProtectObjects')]
+param()
 <#
 .SYNOPSIS
 A Rubrik Security Cloud (RSC) Reporting Module Function returning a list of all objects set to DoNotProtect.

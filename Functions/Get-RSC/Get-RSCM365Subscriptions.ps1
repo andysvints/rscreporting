@@ -1,8 +1,10 @@
 ################################################
 # Function - Get-RSCM365Subscriptions - Getting o365 subscriptions connected to RSC
 ################################################
-Function Get-RSCM365Subscriptions {
-
+Function Get-RSCM365Subscription {
+[CmdletBinding()]
+[Alias('Get-RSCM365Subscriptions')]
+param()
 <#
 .SYNOPSIS
 A Rubrik Security Cloud (RSC) Reporting Module Function returning a list of all M365 subscriptions.
