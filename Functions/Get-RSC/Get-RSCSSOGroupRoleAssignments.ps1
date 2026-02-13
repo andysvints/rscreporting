@@ -1,8 +1,10 @@
 ################################################
 # Function - Get-RSCSSOGroupRoleAssignments - Getting SSO Group Role Assignments within RSC
 ################################################
-Function Get-RSCSSOGroupRoleAssignments {
-
+Function Get-RSCSSOGroupRoleAssignment {
+[CmdletBinding()]
+[Alias('Get-RSCSSOGroupRoleAssignments')]
+param()
 <#
 .SYNOPSIS
 A Rubrik Security Cloud (RSC) Reporting Module Function returns a list of all role assignments per user/service account.

@@ -1,8 +1,10 @@
 ################################################
 # Creating the Get-RSCSnapshotAnalytics function
 ################################################
-Function Get-RSCSnapshotAnalytics {
-
+Function Get-RSCSnapshotAnalytic {
+[CmdletBinding()]
+[Alias('Get-RSCSnapshotAnalytics')]
+param()
 <#
 .SYNOPSIS
 A Rubrik Security Cloud (RSC) Reporting Module Function that returns the data threat analytics for the snapshot ID specified.

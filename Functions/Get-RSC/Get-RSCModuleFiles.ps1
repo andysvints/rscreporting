@@ -1,8 +1,10 @@
 ################################################
 # Creating the Get-RSCModuleFiles function
 ################################################
-Function Get-RSCModuleFiles {
-
+Function Get-RSCModuleFile {
+[CmdletBinding()]
+[Alias('Get-RSCModuleFiles')]
+param()
 <#
 .SYNOPSIS
 A Rubrik Security Cloud (RSC) Reporting Module Function returning a list of all files within the PowerShell module, used by multiple other functions.

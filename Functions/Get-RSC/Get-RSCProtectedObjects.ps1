@@ -1,8 +1,10 @@
 ################################################
 # Function - Get-RSCProtectedObjects - Getting all Protected objects visible to the RSC instance
 ################################################
-Function Get-RSCProtectedObjects {
-
+Function Get-RSCProtectedObject {
+[CmdletBinding()]
+[Alias('Get-RSCProtectedObjects')]
+param()
 <#
 .SYNOPSIS
 A Rubrik Security Cloud (RSC) Reporting Module Function returning a list of all current Protected objects.

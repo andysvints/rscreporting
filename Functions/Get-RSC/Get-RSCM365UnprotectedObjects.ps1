@@ -1,9 +1,10 @@
 ################################################
 # Function - Get-RSCM365UnProtectedObjects - Getting o365 UnProtectedObjects connected to RSC
 ################################################
-Function Get-RSCM365UnProtectedObjects {
-
-<#
+Function Get-RSCM365UnProtectedObject {
+[CmdletBinding()]
+[Alias('Get-RSCM365UnProtectedObjects')]
+param()<#
 .SYNOPSIS
 A Rubrik Security Cloud (RSC) Reporting Module Function returning a list of all M365 unprotected objects.
 

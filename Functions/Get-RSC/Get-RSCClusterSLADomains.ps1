@@ -1,8 +1,10 @@
 ################################################
 # Function - Get-RSCClusterSLADomains - Getting all legacy Cluster based SLA domains in RSC
 ################################################
-Function Get-RSCClusterSLADomains {
-
+Function Get-RSCClusterSLADomain {
+[CmdletBinding()]
+[Alias('Get-RSCClusterSLADomains')]
+param()
 <#
 .SYNOPSIS
 A Rubrik Security Cloud (RSC) Reporting Module Function returns a list of all cluster SLA domains configured and their confiuration details.

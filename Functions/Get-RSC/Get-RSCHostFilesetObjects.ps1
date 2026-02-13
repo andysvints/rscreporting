@@ -1,8 +1,10 @@
 ################################################
 # Function - Get-RSCHostFilesetObjects - Getting all Objects on Physical hosts filesets connected to the RSC instance, used by the Get-RSCFilesets function
 ################################################
-Function Get-RSCHostFilesetObjects {
-
+Function Get-RSCHostFilesetObject {
+[CmdletBinding()]
+[Alias('Get-RSCHostFilesetObjects')]
+param()
 <#
 .SYNOPSIS
 A Rubrik Security Cloud (RSC) Reporting Module Function, primarily used for Get-RSCFilesets, as they are assigned per host, not designed to be used on its own.

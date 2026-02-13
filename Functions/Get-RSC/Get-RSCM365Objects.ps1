@@ -1,8 +1,10 @@
 ################################################
 # Function - Get-RSCM365Objects - Getting o365 Objects connected to RSC
 ################################################
-Function Get-RSCM365Objects {
-
+Function Get-RSCM365Object {
+[CmdletBinding()]
+[Alias('Get-RSCM365Objects')]
+param()
 <#
 .SYNOPSIS
 A Rubrik Security Cloud (RSC) Reporting Module Function returning a list of all M365 objects (I.E mailboxes, onedrive, sharepoint sites, teams).

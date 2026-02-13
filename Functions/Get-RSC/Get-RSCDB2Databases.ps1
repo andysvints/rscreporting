@@ -1,8 +1,10 @@
 ################################################
 # Function - Get-RSCDB2Databases - Getting all DB2 Databases connected to the RSC instance
 ################################################
-Function Get-RSCDB2Databases {
-
+Function Get-RSCDB2Database {
+[CmdletBinding()]
+[Alias('Get-RSCDB2Databases')]
+param()
 <#
 .SYNOPSIS
 A Rubrik Security Cloud (RSC) Reporting Module Function returning a list of all DB2 databases.
