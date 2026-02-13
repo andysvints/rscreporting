@@ -1,8 +1,10 @@
 ################################################
 # Function - Get-RSCSSOGroupUsers - Getting SSO Group Users within RSC
 ################################################
-Function Get-RSCSSOGroupUsers {
-
+Function Get-RSCSSOGroupUser {
+[CmdletBinding()]
+[Alias('Get-RSCSSOGroupUsers')]
+param()
 <#
 .SYNOPSIS
 A Rubrik Security Cloud (RSC) Reporting Module Function returns a list of all users with SSO groups configured.

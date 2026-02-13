@@ -1,7 +1,7 @@
 ################################################
 # Function - Get-RSCMSSQLDatabaseRecoveryPoints - Gets the recoverable time frame of an MSSQL database for recovery operations.
 ################################################
-Function Get-RSCMSSQLDatabaseRecoveryPoints {
+Function Get-RSCMSSQLDatabaseRecoveryPoint {
 	
 <#
 .SYNOPSIS
@@ -30,12 +30,12 @@ Date: 10/10/2023
 # Paramater Config
 ################################################
 [CmdletBinding()]
+[Alias('Get-RSCMSSQLDatabaseRecoveryPoints')]
     Param (
         [Parameter(Mandatory=$true)]
         [string]$DBID,
         [switch]$RecoveryPointOnly
     )
-
 ################################################
 # Importing Module & Running Required Functions
 ################################################
