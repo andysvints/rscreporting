@@ -1,7 +1,7 @@
 ################################################
 # Function - Get-RSCVMwareVMs - Getting all VMware VMs connected to the RSC instance
 ################################################
-Function Get-RSCVMwareVMs {
+Function Get-RSCVMwareVM {
 
 <#
 .SYNOPSIS
@@ -27,6 +27,8 @@ Date: 05/11/2023
 ################################################
 # Paramater Config
 ################################################
+[CmdletBinding()]
+[Alias('Get-RSCVMwareVMs')]
 Param
     (
         [Parameter(ParameterSetName="User")][switch]$DisableLogging,

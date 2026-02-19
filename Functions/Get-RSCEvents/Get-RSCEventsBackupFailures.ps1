@@ -1,7 +1,7 @@
 ################################################
 # Function - Get-RSCEventsBackupFailures - Getting all RSC Failed Backup events
 ################################################
-Function Get-RSCEventsBackupFailures {
+Function Get-RSCEventsBackupFailure {
 
 <#
 .SYNOPSIS
@@ -55,6 +55,7 @@ Date: 05/11/2023
 # Paramater Config
 ################################################
 [CmdletBinding()]
+[Alias('Get-RSCEventsBackupFailures')]
     Param (
         [Parameter(Mandatory=$false)]$DaysToCapture,
         [Parameter(Mandatory=$false)]$HoursToCapture,

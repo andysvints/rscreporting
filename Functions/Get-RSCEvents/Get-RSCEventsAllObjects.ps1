@@ -1,7 +1,7 @@
 ################################################
 # Function - Get-RSCEventsAllObjects - Getting all RSC events for all objects
 ################################################
-Function Get-RSCEventsAllObjects {
+Function Get-RSCEventsAllObject {
 
 <#
 .SYNOPSIS
@@ -50,6 +50,8 @@ Date: 05/11/2023
 ################################################
 # Paramater Config
 ################################################
+[CmdletBinding()]
+[Alias('Get-RSCEventsAllObjects')]
 	Param
     (
         $LastActivityType,$LastActivityStatus,$ObjectType,[switch]$SampleFirst10Objects

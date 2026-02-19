@@ -1,7 +1,7 @@
 ################################################
 # Function - Write-RSCObjects - Getting all objects visible to the RSC instance and writing them to a SQL database table
 ################################################
-Function Write-RSCObjects {
+Function Write-RSCObject {
 
 <#
 .SYNOPSIS
@@ -49,6 +49,8 @@ Date: 08/02/2024
 ################################################
 # Paramater Config
 ################################################
+[CmdletBinding()]
+[Alias('Write-RSCObjects')]
 	Param
     (
         [Parameter(Mandatory=$true)]$SQLInstance,

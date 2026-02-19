@@ -1,7 +1,7 @@
 ﻿################################################
 # Function - Write-RSCEventsAllObjects - Inserting all RSC Archive events into SQL
 ################################################
-Function Write-RSCEventsAllObjects {
+Function Write-RSCEventsAllObject {
 
 <#
 .SYNOPSIS
@@ -60,6 +60,7 @@ Date: 05/11/2023
 # Paramater Config
 ################################################
 [CmdletBinding()]
+[Alias('Write-RSCEventsAllObjects')]
     Param (
         [Parameter(Mandatory=$true)]$SQLInstance,
         [Parameter(Mandatory=$true)]$SQLDB,

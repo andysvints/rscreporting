@@ -1,7 +1,7 @@
 ################################################
 # Function - Write-RSCFilesets - Getting all active file sets in RSC and writing them to a SQL database table
 ################################################
-Function Write-RSCFilesets {
+Function Write-RSCFileset {
 
 <#
 .SYNOPSIS
@@ -47,6 +47,8 @@ Date: 11/04/2025
 ################################################
 # Paramater Config
 ################################################
+[CmdletBinding()]
+[Alias('Write-RSCFilesets')]
 	Param
     (
         [Parameter(Mandatory=$true)]$SQLInstance,

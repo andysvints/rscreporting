@@ -1,7 +1,7 @@
 ################################################
 # Function - Write-RSCEvents - Inserting all RSC events into SQL
 ################################################
-Function Write-RSCEvents {
+Function Write-RSCEvent {
 
 <#
 .SYNOPSIS
@@ -70,6 +70,7 @@ Date: 05/11/2023
 # Paramater Config
 ################################################
 [CmdletBinding()]
+[Alias('Write-RSCEvents')]
     Param (
         [Parameter(Mandatory=$true)]$SQLInstance,
         [Parameter(Mandatory=$true)]$SQLDB,

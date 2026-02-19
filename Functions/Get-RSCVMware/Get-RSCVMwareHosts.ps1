@@ -1,7 +1,7 @@
 ################################################
 # Function - Get-RSCVMwareHosts - Getting all VMware hosts connected to the RSC instance
 ################################################
-Function Get-RSCVMwareHosts {
+Function Get-RSCVMwareHost {
 
 <#
 .SYNOPSIS
@@ -24,7 +24,9 @@ This example returns an array of all the information returned by the GraphQL end
 Author: Joshua Stenhouse
 Date: 05/11/2023
 #>
-
+[CmdletBinding()]
+[Alias('Get-RSCVMwareHosts')]
+param()
 ################################################
 # Importing Module & Running Required Functions
 ################################################

@@ -1,7 +1,7 @@
 ################################################
 # Function - Write-RSCSLADomains - Getting all SLA domains visible to the RSC instance and writing them to a SQL database table
 ################################################
-Function Write-RSCSLADomains {
+Function Write-RSCSLADomain {
 
 <#
 .SYNOPSIS
@@ -47,6 +47,8 @@ Date: 10/16/2024
 ################################################
 # Paramater Config
 ################################################
+[CmdletBinding()]
+[Alias('Write-RSCSLADomains')]
 	Param
     (
         [Parameter(Mandatory=$true)]$SQLInstance,

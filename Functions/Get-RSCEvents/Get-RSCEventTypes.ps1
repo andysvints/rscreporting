@@ -1,7 +1,7 @@
 ################################################
 # Function - Get-RSCEventTypes - Returning all event types in RSC 
 ################################################
-Function Get-RSCEventTypes {
+Function Get-RSCEventType {
 
 <#
 .SYNOPSIS
@@ -24,6 +24,9 @@ This example returns an array of all the information returned by the GraphQL end
 Author: Joshua Stenhouse
 Date: 05/11/2023
 #>
+[CmdletBinding()]
+[Alias('Get-RSCEventTypes')]
+param()
 ################################################
 # Creating list of all event types taken from event UI API call (last updated 06/17/2024)
 ################################################

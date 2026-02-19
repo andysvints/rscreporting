@@ -1,7 +1,7 @@
 ################################################
 # Function - Get-RSCAnomalies - Getting all RSC Anomaly events
 ################################################
-Function Get-RSCAnomalies {
+Function Get-RSCAnomaly {
 
 <#
 .SYNOPSIS
@@ -36,6 +36,8 @@ Date: 05/11/2023
 ################################################
 # Paramater Config
 ################################################
+[CmdletBinding()]
+[Alias('Get-RSCAnomalies')]
 	Param
     (
         $DaysToCapture

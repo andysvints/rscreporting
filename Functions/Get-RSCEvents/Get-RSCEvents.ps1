@@ -1,7 +1,7 @@
 ################################################
 # Function - Get-RSCEvents - Getting all RSC events
 ################################################
-Function Get-RSCEvents {
+Function Get-RSCEvent {
 
 <#
 .SYNOPSIS
@@ -59,6 +59,7 @@ Date: 05/11/2023
 # Paramater Config
 ################################################
 [CmdletBinding()]
+[Alias('Get-RSCEvents')]
     Param (
         [Parameter(Mandatory=$false)]$DaysToCapture,
         [Parameter(Mandatory=$false)]$HoursToCapture,

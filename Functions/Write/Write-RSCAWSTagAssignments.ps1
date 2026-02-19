@@ -1,7 +1,7 @@
 ################################################
 # Function - Write-RSCAWSTagAssignments - Inserting all RSC Audit events into SQL
 ################################################
-Function Write-RSCAWSTagAssignments {
+Function Write-RSCAWSTagAssignment {
 
 <#
 .SYNOPSIS
@@ -43,6 +43,8 @@ Date: 05/11/2023
 ################################################
 # Paramater Config
 ################################################
+[CmdletBinding()]
+[Alias('Write-RSCAWSTagAssignments')]
 	Param
     (
         [Parameter(Mandatory=$true)]$SQLInstance,[Parameter(Mandatory=$true)]$SQLDB,$SQLTable,$TagFilter,

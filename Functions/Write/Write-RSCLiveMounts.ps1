@@ -1,7 +1,7 @@
 ################################################
 # Function - Write-RSCLiveMounts - Getting all active live mounts in RSC and writing them to a SQL database table
 ################################################
-Function Write-RSCLiveMounts {
+Function Write-RSCLiveMount {
 
 <#
 .SYNOPSIS
@@ -47,6 +47,8 @@ Date: 11/04/2025
 ################################################
 # Paramater Config
 ################################################
+[CmdletBinding()]
+[Alias('Write-RSCLiveMounts')]
 	Param
     (
         [Parameter(Mandatory=$true)]$SQLInstance,

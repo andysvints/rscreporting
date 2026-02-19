@@ -1,7 +1,7 @@
 ################################################
 # Function - Get-RSCEventObjectTypes - Getting all object types usable on the Events API in RSC
 ################################################
-Function Get-RSCEventObjectTypes {
+Function Get-RSCEventObjectType {
 
 <#
 .SYNOPSIS
@@ -23,7 +23,9 @@ Get-RSCEventObjectTypes
 Author: Joshua Stenhouse
 Date: 05/11/2023
 #>
-
+[CmdletBinding()]
+[Alias('Get-RSCEventObjectTypes')]
+param()
 # Static array of object types last updated 05/25/23
 $EventObjectTypes = "UNKNOWN_EVENT_OBJECT_TYPE, RUBRIK_SAAS_ACCOUNT, APP_BLUEPRINT, APP_FLOWS, OBJECT_TYPE_AUTH_DOMAIN, AWS_ACCOUNT, 
 AWS_EVENT_TYPE, AZURE_NATIVE_SUBSCRIPTION, AZURE_NATIVE_VM, AZURE_NATIVE_DISK, AZURE_SQL_DATABASE, AZURE_SQL_MANAGED_INSTANCE, 

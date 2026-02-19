@@ -1,7 +1,7 @@
 ################################################
 # Function - Write-RSCClusters - Getting all RSC Clusters and writing their data to a SQL table
 ################################################
-Function Write-RSCClusters {
+Function Write-RSCCluster {
 
 <#
 .SYNOPSIS
@@ -47,6 +47,8 @@ Date: 01/22/2026
 ################################################
 # Paramater Config
 ################################################
+[CmdletBinding()]
+[Alias('Write-RSCClusters')]
 	Param
     (
         [Parameter(Mandatory=$true)]$SQLInstance,

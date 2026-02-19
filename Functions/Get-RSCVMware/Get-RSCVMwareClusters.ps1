@@ -1,7 +1,7 @@
 ################################################
 # Function - Get-RSCVMwareClusters - Getting all VMware clusters connected to the RSC instance
 ################################################
-Function Get-RSCVMwareClusters {
+Function Get-RSCVMwareCluster {
 
 <#
 .SYNOPSIS
@@ -24,6 +24,9 @@ This example returns an array of all the information returned by the GraphQL end
 Author: Joshua Stenhouse
 Date: 05/11/2023
 #>
+[CmdletBinding()]
+[Alias('Get-RSCVMwareClusters')]
+param()
 
 ################################################
 # Importing Module & Running Required Functions
