@@ -1,7 +1,7 @@
 ################################################
 # Function - Get-RSCVMwarevCenters - Getting all vCenters connected to the RSC instance
 ################################################
-Function Get-RSCVMwarevCenters {
+Function Get-RSCVMwarevCenter {
 
 <#
 .SYNOPSIS
@@ -24,7 +24,9 @@ This example returns an array of all the information returned by the GraphQL end
 Author: Joshua Stenhouse
 Date: 05/11/2023
 #>
-
+[CmdletBinding()]
+[Alias('Get-RSCVMwarevCenters')]
+param()
 ################################################
 # Importing Module & Running Required Functions
 ################################################

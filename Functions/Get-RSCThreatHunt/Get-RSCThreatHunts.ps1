@@ -1,7 +1,7 @@
 ################################################
 # Function - Get-RSCThreatHunts - Getting all RSC Threat hunts
 ################################################
-Function Get-RSCThreatHunts {
+Function Get-RSCThreatHunt {
 
 <#
 .SYNOPSIS
@@ -31,6 +31,8 @@ Date: 05/11/2023
 ################################################
 # Paramater Config
 ################################################
+[CmdletBinding()]
+[Alias('Get-RSCThreatHunts')]
 	Param
     (
         $HoursToCapture,$DaysToCapture

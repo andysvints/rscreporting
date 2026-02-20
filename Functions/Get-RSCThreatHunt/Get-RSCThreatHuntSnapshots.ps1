@@ -1,7 +1,7 @@
 ################################################
 # Function - Get-RSCThreatHuntSnapshots - Getting RSC Threat Hunt Snapshots
 ################################################
-Function Get-RSCThreatHuntSnapshots {
+Function Get-RSCThreatHuntSnapshot {
 
 <#
 .SYNOPSIS
@@ -29,6 +29,8 @@ Date: 05/11/2023
 ################################################
 # Paramater Config
 ################################################
+[CmdletBinding()]
+[Alias('Get-RSCThreatHuntSnapshots')]
 	Param
     (
         [Parameter(Mandatory=$true)][String]$ThreatHuntID

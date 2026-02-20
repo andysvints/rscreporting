@@ -1,7 +1,7 @@
 ################################################
 # Function - Get-RSCThreatHuntObjects - Getting RSC Threat Hunt Objects
 ################################################
-Function Get-RSCThreatHuntObjects {
+Function Get-RSCThreatHuntObject {
 
 <#
 .SYNOPSIS
@@ -29,6 +29,8 @@ Date: 05/11/2023
 ################################################
 # Paramater Config
 ################################################
+[CmdletBinding()]
+[Alias('Get-RSCThreatHuntObjects')]
 	Param
     (
         [Parameter(Mandatory=$true)][String]$ThreatHuntID

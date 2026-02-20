@@ -1,7 +1,7 @@
 ################################################
 # Function - Get-RSCVMwareVMLiveMounts - Getting all VMware VM Live Mounts on RSC
 ################################################
-Function Get-RSCVMwareVMLiveMounts {
+Function Get-RSCVMwareVMLiveMount {
 
 <#
 .SYNOPSIS
@@ -24,7 +24,9 @@ This example returns an array of all the information returned by the GraphQL end
 Author: Joshua Stenhouse
 Date: 05/11/2023
 #>
-
+[CmdletBinding()]
+[Alias('Get-RSCVMwareVMLiveMounts')]
+param()
 ################################################
 # Importing Module & Running Required Functions
 ################################################

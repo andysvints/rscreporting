@@ -1,7 +1,7 @@
 ﻿################################################
 # Function - New-RSCReport02MultiDayStrikes - Create RSC Report in the directory specified
 ################################################
-Function New-RSCReport02MultiDayStrikes {
+Function New-RSCReport02MultiDayStrike {
 
 <#
 .SYNOPSIS
@@ -66,6 +66,8 @@ Date: 05/11/2023
 ################################################
 # Paramater Config
 ################################################
+[CmdletBinding()]
+[Alias('New-RSCReport02MultiDayStrikes')]
 Param
     (
         $DaysToReport,$ReportName,$Directory,$ObjectType,$BackupWindowStartHour,$BackupWindowStartMinutes,$ExcludeObjectType,$SLADomain,

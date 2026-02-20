@@ -1,7 +1,7 @@
 ################################################
 # Function - Get-RSCThreatHuntMatches - Getting RSC Threat Hunt Matches
 ################################################
-Function Get-RSCThreatHuntMatches {
+Function Get-RSCThreatHuntMatch {
 
 <#
 .SYNOPSIS
@@ -29,6 +29,8 @@ Date: 05/11/2023
 ################################################
 # Paramater Config
 ################################################
+[CmdletBinding()]
+[Alias('Get-RSCThreatHuntMatches')]
 	Param
     (
         [Parameter(Mandatory=$true)][String]$ThreatHuntID
