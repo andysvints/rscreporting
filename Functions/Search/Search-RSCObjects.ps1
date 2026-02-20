@@ -1,7 +1,7 @@
 ################################################
 # Function - Search-RSCObjects - Search RSC Objects by name
 ################################################
-Function Search-RSCObjects {
+Function Search-RSCObject {
 
 <#
 .SYNOPSIS
@@ -27,6 +27,8 @@ Date: 05/30/2025
 ################################################
 # Paramater Config
 ################################################
+[CmdletBinding()]
+[Alias('Search-RSCObjects')]
 Param
     (
         [Parameter(Mandatory=$true)]$ObjectName

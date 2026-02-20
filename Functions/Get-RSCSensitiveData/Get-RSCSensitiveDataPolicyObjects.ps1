@@ -1,7 +1,7 @@
 ################################################
 # Function - Get-RSCSensitiveDataPolicyObjects - Getting All Sensitive Data Policy Objects in RSC
 ################################################
-Function Get-RSCSensitiveDataPolicyObjects {
+Function Get-RSCSensitiveDataPolicyObject {
 
 <#
 .SYNOPSIS
@@ -24,7 +24,9 @@ This example returns an array of all the information returned by the GraphQL end
 Author: Joshua Stenhouse
 Date: 05/11/2023
 #>
-
+[CmdletBinding()]
+[Alias('Get-RSCSensitiveDataPolicyObjects')]
+param()
 ################################################
 # Importing Module & Running Required Functions
 ################################################

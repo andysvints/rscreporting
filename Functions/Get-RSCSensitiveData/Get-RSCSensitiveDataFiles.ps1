@@ -1,7 +1,7 @@
 ################################################
 # Creating the Get-RSCSensitiveDataFiles function
 ################################################
-Function Get-RSCSensitiveDataFiles {
+Function Get-RSCSensitiveDataFile {
 
 <#
 .SYNOPSIS
@@ -30,6 +30,7 @@ Date: 05/11/2023
 # Paramater Config
 ################################################
 [CmdletBinding()]
+[Alias('Get-RSCSensitiveDataFiles')]
     Param (
         [Parameter(Mandatory=$true)]
         [string]$ObjectID

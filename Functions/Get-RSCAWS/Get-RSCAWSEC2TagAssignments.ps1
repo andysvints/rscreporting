@@ -1,7 +1,7 @@
 ################################################
 # Function - Get-RSCAWSEC2TagAssignments - Getting All RSCAWSEC2TagAssignments connected to RSC
 ################################################
-Function Get-RSCAWSEC2TagAssignments {
+Function Get-RSCAWSEC2TagAssignment {
 
 <#
 .SYNOPSIS
@@ -24,7 +24,9 @@ This example returns an array of all the information returned by the GraphQL end
 Author: Joshua Stenhouse
 Date: 05/11/2023
 #>
-
+[CmdletBinding()]
+[Alias('Get-RSCAWSEC2TagAssignments')]
+param()
 ################################################
 # Importing Module & Running Required Functions
 ################################################

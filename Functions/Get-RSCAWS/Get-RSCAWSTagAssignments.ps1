@@ -1,7 +1,7 @@
 ################################################
 # Function - Get-RSCAWSTagAssignments - Getting All RSCAWSTagAssignments connected to RSC
 ################################################
-Function Get-RSCAWSTagAssignments {
+Function Get-RSCAWSTagAssignment {
 
 <#
 .SYNOPSIS
@@ -28,6 +28,8 @@ Date: 10/29/2025
 ################################################
 # Paramater Config
 ################################################
+[CmdletBinding()]
+[Alias('Get-RSCAWSTagAssignments')]
 	Param
     (
         [Parameter(Mandatory=$false)]$TagFilter

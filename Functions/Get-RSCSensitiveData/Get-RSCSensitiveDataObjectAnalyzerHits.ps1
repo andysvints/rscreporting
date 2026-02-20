@@ -1,7 +1,7 @@
 ################################################
 # Function - Get-RSCSensitiveDataObjectAnalyzerHits - Getting All Objects Scanned for Sensitive data in RSC
 ################################################
-Function Get-RSCSensitiveDataObjectAnalyzerHits {
+Function Get-RSCSensitiveDataObjectAnalyzerHit {
 
 <#
 .SYNOPSIS
@@ -24,7 +24,9 @@ This example returns an array of all the information returned by the GraphQL end
 Author: Joshua Stenhouse
 Date: 05/11/2023
 #>
-
+[CmdletBinding()]
+[Alias('Get-RSCSensitiveDataObjectAnalyzerHits')]
+param()
 ################################################
 # Importing Module & Running Required Functions
 ################################################
