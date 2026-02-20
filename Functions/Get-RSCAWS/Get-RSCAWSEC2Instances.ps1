@@ -1,7 +1,7 @@
 ################################################
 # Function - Get-RSCAWSEC2Instances - Getting All RSCAWSEC2Instances connected to RSC
 ################################################
-Function Get-RSCAWSEC2Instances {
+Function Get-RSCAWSEC2Instance {
 
 <#
 .SYNOPSIS
@@ -24,7 +24,9 @@ This example returns an array of all the information returned by the GraphQL end
 Author: Joshua Stenhouse
 Date: 05/11/2023
 #>
-
+[CmdletBinding()]
+[Alias('Get-RSCAWSEC2Instances')]
+param()
 ################################################
 # Importing Module & Running Required Functions
 ################################################

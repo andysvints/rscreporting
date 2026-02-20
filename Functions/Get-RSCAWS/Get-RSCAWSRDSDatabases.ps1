@@ -1,7 +1,7 @@
 ################################################
 # Function - Get-RSCAWSRDSDatabases - Getting All RSCRDSDatabases connected to RSC
 ################################################
-Function Get-RSCAWSRDSDatabases {
+Function Get-RSCAWSRDSDatabase {
 
 <#
 .SYNOPSIS
@@ -24,7 +24,9 @@ This example returns an array of all the information returned by the GraphQL end
 Author: Joshua Stenhouse
 Date: 05/11/2023
 #>
-
+[CmdletBinding()]
+[Alias('Get-RSCAWSRDSDatabases')]
+param()
 ################################################
 # Importing Module & Running Required Functions
 ################################################

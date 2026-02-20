@@ -1,7 +1,7 @@
 ################################################
 # Function - Get-RSCAWSEBSVolumes - Getting All RSCAWSEBSVolumes connected to RSC
 ################################################
-Function Get-RSCAWSEBSVolumes {
+Function Get-RSCAWSEBSVolume {
 
 <#
 .SYNOPSIS
@@ -24,7 +24,9 @@ This example returns an array of all the information returned by the GraphQL end
 Author: Joshua Stenhouse
 Date: 05/11/2023
 #>
-
+[CmdletBinding()]
+[Alias('Get-RSCAWSEBSVolumes')]
+param()
 ################################################
 # Importing Module & Running Required Functions
 ################################################

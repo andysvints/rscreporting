@@ -1,7 +1,7 @@
 ################################################
 # Function - Get-RSCAWSS3Buckets - Getting All AWS S3 Buckets connected to RSC
 ################################################
-Function Get-RSCAWSS3Buckets {
+Function Get-RSCAWSS3Bucket {
 
 <#
 .SYNOPSIS
@@ -24,7 +24,9 @@ This example returns an array of all the information returned by the GraphQL end
 Author: Joshua Stenhouse
 Date: 07/09/2024
 #>
-
+[CmdletBinding()]
+[Alias('Get-RSCAWSS3Buckets')]
+param()
 ################################################
 # Importing Module & Running Required Functions
 ################################################
